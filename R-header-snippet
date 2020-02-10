@@ -1,0 +1,62 @@
+##--------------- Header --------------------------------------------
+## Script name: 
+## Purpose: 
+## Author: Brad Jenkins
+## Date Created: `r paste(Sys.Date())`
+## Email: BradTJenkins@GMail.com
+##--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+## Notes:
+##   This script was created to download new rail data quarterly and annually
+##  from AAR.org, import, clean it up, and send it to a SQL Database.
+##
+##--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+## --------------- Initialize ---------------------------------------
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, readxl, magrittr, DBI, lubridate, odbc)
+memory.limit(30000000)   # Needed on some PCs to increase memory allowance, no impact on macs
+
+
+## --------------- Sources ------------------------------------------
+
+
+raw_dataPath <- 
+  "C:/Users/bjenkins/Documents/Datasets/....."
+clean_dataPath <-
+  "C:/Users/bjenkins/Documents/Datasets/....."
+
+
+## --------------- Functions ----------------------------------------
+
+
+
+## --------------- Import files -------------------------------------
+
+
+
+## --------------- Check that all files imported --------------------
+
+
+
+## ---------- Extract DFs, Name columns, drop extras ----------------
+
+
+
+## --------------- Tidy the Datasets --------------------------------
+
+
+
+## --------------- Validation -------------------------------------
+
+
+
+## --------------- Export -------------------------------------------
+
+dbWriteTable(?con, 
+             "", 
+             ???,
+             overwrite = F,
+             append = T)
+
