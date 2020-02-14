@@ -1,3 +1,43 @@
+
+## Header -----------------------------------------------------------------
+## Script name: 
+## Purpose: 
+## Author: Brad Jenkins
+## Date Created: `r paste(Sys.Date())`
+## Email: BradTJenkins@GMail.com
+## --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ----
+## Notes:
+##   
+##  
+##
+## --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ----
+
+
+# Initialize --------------------------------------------------------------
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, readxl, magrittr, DBI, lubridate, odbc)
+memory.limit(30000000)   # Needed on some PCs to increase memory allowance, no impact on macs
+
+
+# Sources -----------------------------------------------------------------
+
+raw_dataPath <- 
+  "C:/Users/bjenkins/Documents/Datasets/....."
+clean_dataPath <-
+  "C:/Users/bjenkins/Documents/Datasets/....."
+
+
+# Functions ---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 ##--------------- Header --------------------------------------------
 ## Script name: 
 ## Purpose: 
